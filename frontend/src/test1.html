@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <section id="conversation">
+            <div id="post">
+                <div id="from">
+                    <form action="">
+                        <div class="postbox">
+                            <div role="alert"></div>
+                            <div class="ratings-wrapper" data-role="ratings-container"></div>
+                            <div class="compose-wrapper">
+                                <div class="avatar">
+                                    <span class="user user--refresh">
+                                        <div>G</div>
+                                    </span>
+                                </div>
+                                <div class="textarea-outer-wrapper textarea-outer-wrapper--refresh">
+                                    <div class="textarea-wrapper" data-role="textarea" dir="auto">
+                                        <div>
+                                            <span class="placeholder">Join the discussion…</span>
+                                            <div class="textarea" aria-label="Join the discussion…" style="overflow: auto; overflow-wrap: break-word; max-height: 350px;">
+                                                <p></p>
+                                            </div>
+                                            <div style="display: none;">
+                                                <ul class="user-mention__list" id="user-mention-list">
+                                                    <li class="header user-mention__header">
+                                                        <h5>in this conversation</h5>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div data-role="drag-drop-placeholder" class="media-drag-hover" style="display: none;">
+                                            <div class="drag-text">⬇ Drag and drop your images here to upload them.</div>
+                                        </div>
+                                        <div class="edit-alert" role="postbox-alert"></div>
+                                        <div class="text-editor-container">
+                                            <div class="post-actions">
+                                                <div class="wysiwyg">
+                                                    <div data-action="text-editor-buttons">
+                                                        <div class="wysiwyg__item">
+                                                            <div class="wysiwyg__bold" title="Bold" role="img"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="wysiwyg__item" aria-label="Add italics tags to text editor">
+                                                        <div class="wysiwyg__italic" title="Italic" role="img"></div>
+                                                    </div>
+                                                    <div class="wysiwyg__item" aria-label="Add underline tags to text editor">
+                                                        <div class="wysiwyg__underline" title="Underline" role="img"></div>
+                                                    </div>
+                                                    <div class="wysiwyg__item" aria-label="Add strikethrough tags to text editor">
+                                                        <div class="wysiwyg__strikethrough" title="Strikethrough" role="img"></div>
+                                                    </div>
+                                                    <div class="wysiwyg__item" aria-label="Add link tags to text editor">
+                                                        <div class="wysiwyg__link" title="Link" role="img"></div>
+                                                    </div>
+                                                    <div class="wysiwyg__item" aria-label="Add spoiler tags to text editor">
+                                                        <div class="wysiwyg__spoiler" title="Spoiler" role="img"></div>
+                                                    </div>
+                                                    <div class="wysiwyg__item" aria-label="Add code tags to text editor">
+                                                        <div class="wysiwyg__code" title="Code" role="img"></div>
+                                                    </div>
+                                                    <div
+                                                        class="wysiwyg__item"
+                                                        data-action="text-editor-tag"
+                                                        data-tag="blockquote"
+                                                        tabindex="0"
+                                                        aria-label="Add block quote tags to text editor"
+                                                    >
+                                                        <div class="wysiwyg__blockquote" title="Quote" role="img"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="logged-in">
+                                                <section>
+                                                    <div class="temp-post">
+                                                        <button type="submit" class="btn post-action__button full-size-button ">Comment</button>
+                                                        <button type="submit" class="hidden btn post-action__button small-size-button">Comment</button>
+                                                    </div>
+                                                </section>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-role="login-form">
+                            <div>
+                                <div>
+                                    <section class="auth-section logged-out__display">
+                                        <div class="connect">
+                                            <h6 class="connect__heading">Log in with</h6>
+                                            <ul data-role="login-menu" class="services login-buttons">
+                                                <li class="auth-disqus">
+                                                    <button
+                                                        type="button"
+                                                        data-action="auth:disqus"
+                                                        title="Disqus"
+                                                        class="connect__button"
+                                                        aria-label="Login with Disqus"
+                                                    >
+                                                        <i class="icon-disqus"></i>
+                                                    </button>
+                                                </li>
+                                                <li class="auth-facebook">
+                                                    <button
+                                                        type="button"
+                                                        data-action="auth:facebook"
+                                                        title="Facebook"
+                                                        class="connect__button"
+                                                        aria-label="Login with Facebook"
+                                                    >
+                                                        <i class="icon-facebook-circle"></i>
+                                                    </button>
+                                                </li>
+                                                <li class="auth-twitter">
+                                                    <button
+                                                        type="button"
+                                                        data-action="auth:twitter"
+                                                        title="Twitter"
+                                                        class="connect__button"
+                                                        aria-label="Login with Twitter"
+                                                    >
+                                                        <i class="icon-twitter-circle"></i>
+                                                    </button>
+                                                </li>
+                                                <li class="auth-google">
+                                                    <button
+                                                        type="button"
+                                                        data-action="auth:google"
+                                                        title="Google"
+                                                        class="connect__button"
+                                                        aria-label="Login with Google"
+                                                    >
+                                                        <i class="icon-google-plus-circle"></i>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="guest guest--refresh">
+                                            <div class="sign-up-wrapper-refresh">
+                                                <h6 class="guest-form-title guest-form-title--refresh">
+                                                    <span class="register-text"> or sign up with Disqus</span>
+                                                    <span class="guest-text"> or pick a name</span>
+                                                </h6>
+                                                <button
+                                                    type="button"
+                                                    class="help-tooltip__wrapper help-icon"
+                                                    name="guest_tooltip"
+                                                    tabindex="0"
+                                                >
+                                                    <div id="rules" class="help-tooltip__container" data-role="guest-form-tooltip">
+                                                        <div class="tooltip show help-tooltip">
+                                                            <h3 class="help-tooltip__heading">Disqus is a discussion network</h3>
+                                                            <ul class="help-tooltip__list">
+                                                                <li>
+                                                                    <span>Don't be a jerk or do anything illegal. Everything is easier that way.</span>
+                                                                </li>
+                                                            </ul>
+                                                            <p class="clearfix">
+                                                                <a
+                                                                    href="https://docs.disqus.com/kb/terms-and-policies/"
+                                                                    class="btn btn-small help-tooltip__button"
+                                                                    rel="noopener noreferrer"
+                                                                    target="_blank"
+                                                                >Read full terms and conditions</a>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                            <p class="input-wrapper">
+                                                <input
+                                                    dir="auto"
+                                                    type="text"
+                                                    placeholder="Name"
+                                                    name="display_name"
+                                                    id="view80_display_name"
+                                                    maxlength="30"
+                                                    class="input--text"
+                                                    aria-label="name"
+                                                >
+                                            </p>
+                                            <div class="guest-details " data-role="guest-details">
+                                                <p class="input-wrapper">
+                                                    <input
+                                                        dir="auto"
+                                                        type="email"
+                                                        placeholder="Email"
+                                                        name="email"
+                                                        id="view80_email"
+                                                        class="input--text"
+                                                        aria-label="email"
+                                                    >
+                                                </p>
+                                                <p class="input-wrapper">
+                                                    <input
+                                                        dir="auto"
+                                                        disabled=""
+                                                        type="text"
+                                                        class="register-text input--text"
+                                                        placeholder="Password"
+                                                        name="password"
+                                                        aria-label="password"
+                                                        id="view80_password"
+                                                    >
+                                                </p>
+                                                <p>
+                                                    <label>
+                                                        <span>
+                                                            Please access our
+                                                            <a href="https://disqus.com/privacy-policy" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+                                                            to learn what personal data Disqus collects and your choices about how it is used.  All users of our service are also subject to our
+                                                            <a href="https://help.disqus.com/customer/portal/articles/466260-terms-of-service" target="_blank" rel="noopener noreferrer">Terms of Service</a>
+                                                            .
+                                                        </span>
+                                                    </label>
+                                                </p>
+                                                <input type="checkbox" name="author-guest" style="display: none;">
+                                                <div class="g-recaptcha" data-role="grecaptcha-container"></div>
+                                                <div class="proceed" data-role="submit-btn-container">
+                                                    <button type="submit" class="proceed__button btn submit" aria-label="Next">
+                                                        <span class="icon-proceed"></span>
+                                                        <div class="spinner"></div>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </body>
+</html>
